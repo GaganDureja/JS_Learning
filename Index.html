@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" type="text/css" id="styled" href="">
+    <script type="text/javascript" src="External_JS.js"></script><!-- script using external link/path -->
+    <script type="text/javascript">//script used in head tag
+        function myfunc() {
+            document.getElementById('demo').innerHTML = "Hii, Click the button to change paragraph"
+        }
+    </script>
+    <style type="text/css"></style>
+</head>
+<body>
+    <h1>JS Introduction</h1>
+
+    <p id="demo">Hii, Click the button to change paragraph</p>
+    <button onclick="myfunction()">Change</button>
+    <button onclick="myfunc()">Revert</button>
+
+    <p>You can also change source/Links with JS</p>
+    <button onclick="document.getElementById('styled').href='Style1.css'">Style 1</button><!-- Example of script inside body -->
+    <button onclick="document.getElementById('styled').href='Style2.css'">Style 2</button>
+    <button onclick="document.getElementById('styled').href='#'">Default</button>
+    <hr>
+
+
+    <h1>JS Where to</h1>
+
+    <p>JS can be inserted in head tag/ in body/ by an External link, on this project we have used all 3 types.</p>
+    <hr>
+
+
+    <h1>JS Output</h1>
+
+    <p>Checking JS & the windows alert</p>
+    <script type="text/javascript">
+        document.write(5 + 7);
+        /*window.alert("Hii, Welcome to JavaScript Project");*/
+        console.log("Hii to check the output in console")
+    </script>
+
+    <p>To print the page, Press Print</p>
+    <button onclick="window.print()">Print</button>
+    <hr>
+
+
+    <h1>JS Statements, Syntax, Comments</h1>
+
+    <p>This teaches how write a good code with proper space and line break</p>
+    
+    <p>Declare variable, assign value to var, Expression use BODMAS, JS comments starts with // for single line and for multiple lines /**/ and hyphens(-) are not allowed in JS they are reserved for subtraction</p>
+    <hr>
+
+    <h1>JS Variable, Operator, Arithmetic, Assignment Operator</h1>
+
+    <p>JS var names can only start with a leeter/ _/ $</p>
+    <p>Operators follow BODMAS</p>
+    <p>Ex. of Assignment operator: x+= 5; It means x = x + 5;</p>
+    <hr>
+
+
+    <h1>JS Data Types, Functions</h1>
+
+    <p>Object, Boolean, Number, String, Array, Object, Null, Undefined all are data types</p>
+    <p>A function is a block of code designed to perform specific task</p>
+    <p>Example:</p>
+    <p id="temp"></p>
+    <script type="text/javascript">
+        function celcius(fahren) {
+            return (5/9) * (fahren-32)
+        }
+        document.getElementById("temp").innerHTML = celcius(77)
+    </script>
+    <hr>
+
+
+    <h1>JS Objects</h1>
+
+    <p></p>
+    <hr>
+
+
+    <h1>JS Conditions, Switch,break/continue</h1>
+
+    <p>Use of if, else, elseif</p>
+    <p>This greet vary with time.</p>
+    <button onclick="greet()">Try it</button>
+    <p id="greet"></p>
+
+    <p>Check for weekend.</p>
+    <button onclick="week()" >Check</button>
+    <p id="week"></p>
+    <hr>
+
+
+    <h1>JS loop for, While</h1>
+
+    <p>To run a code again and again, say to print out array</p>
+    <button onclick="car_array()">Show cars list</button>
+    <p id="car"></p>
+
+    <p>While loop used in array</p>
+    <button onclick="car_while()">Show cars</button>
+    <p id="car_while"></p>
+
+    <p>Break with label jump out of code block and without label breaks jump out of loop</p>
+    <p>Continue with/without label skip one loop iteration</p>
+
+
+    <h1>JS Type conversion</h1>
+
+    <p id= "typeof"><script>
+        document.getElementById('typeof').innerHTML = "45 is a " + typeof 45 + " type of variable.";
+    </script></p>
+
+
+
+
+       
+
+	
+</body>
+</html>
