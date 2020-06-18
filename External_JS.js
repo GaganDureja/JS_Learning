@@ -55,3 +55,22 @@ function car_while() {
 	}
 	document.getElementById('car_while').innerHTML = text_car;
 }
+
+function error(){
+	var x, message;
+	message = document.getElementById("output_err");
+	x = document.getElementById("input_no").value;
+	try {
+		if (x == "") { throw "is Empty."}
+		if (isNaN(x)) { throw "is not a Number."}
+		x = Number(x);
+	    if (x > 10) { throw "is too High."}
+	    if (x < 5) { throw "is too Low."}
+	}
+    catch(err) {
+    	message.innerHTML = "Input" + err;
+    }
+    finally {
+    	document.getElementById("input_no").value = "";
+    }
+}

@@ -105,13 +105,60 @@
 
     <p>Break with label jump out of code block and without label breaks jump out of loop</p>
     <p>Continue with/without label skip one loop iteration</p>
+    <hr>
 
 
-    <h1>JS Type conversion</h1>
+    <h1>JS Type conversion, Bitwise, Regular Exp.</h1>
 
     <p id= "typeof"><script>
         document.getElementById('typeof').innerHTML = "45 is a " + typeof 45 + " type of variable.";
     </script></p>
+
+    <p>Conversion of Binary to Decimal</p>
+    <p id="dec"></p>
+    <p>And now back Decimal to Binary</p>
+    <p id="bin"></p>
+    <script type="text/javascript">
+        document.getElementById("dec").innerHTML = bin2dec(1111);
+        function bin2dec(bin){
+            return parseInt(bin, 2).toString(10);
+        }
+        var x = document.getElementById("dec").innerHTML
+        document.getElementById("bin").innerHTML = dec2bin(x);
+        function dec2bin(dec){
+            return (dec >>> 0).toString(2);
+        }
+    </script>
+
+    <p>Regular expressions are used to search data or change data</p>
+    <hr>
+
+
+    <h1>JS Errors, Scope, Hoisting and Strict mode</h1>
+
+    <p>Please Enter a number between 5 and 10</p>
+    <input type="text" name="" id="input_no">
+    <button onclick="error()">Test I/P</button>
+    <p id="output_err"></p>
+
+    <p>JS Scope: If we define a var in a func that var cannot be accessed from outside the function, so It is local(scope)</p>
+    <p>and If we didnot declare a variable and assign a value to it then it is declared global but not in JS strict mode</p>
+
+    <p>Hoisting is JavaScript's default behavior of moving all declarations(not assigned values) to the top of the current scope but not in Scrict mode. </p>
+    <p>Follow proper syntax, don't use reserved words as var</p>
+    <hr>
+
+
+    <h1>JS this, let, const</h1>
+
+    <hr>
+
+    <h1>JS Arrow func, Classes</h1>
+
+    
+
+    
+
 
 
 
